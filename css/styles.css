@@ -167,6 +167,7 @@ header{
 .navbar__items a{
     transition: all 0.6s ease-in 0.3s;
     color: var(--black-shade);
+    font-weight: 700;
 }
 
 .navbar__items a:hover{
@@ -312,6 +313,7 @@ header{
     grid-template-columns: repeat( 2, 1fr);
     column-gap: 5rem;
     align-items: center;
+    row-gap: 7rem;
 }
 .grid2-2{
     display: grid;
