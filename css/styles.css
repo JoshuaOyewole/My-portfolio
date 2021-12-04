@@ -52,6 +52,9 @@
 .direction-row{
     flex-direction: row;
 }
+.col{
+    flex-direction: column;
+}
 .iblock{display: inline-block;}
 .mb-s{
     margin-bottom: 2rem;
@@ -68,10 +71,18 @@
 .pb-m{
     padding-bottom: 4rem;
 }
+.pt-m{
+    padding-top: 4rem;
+}
+.pt-l{
+    padding-top: 6rem;
+}
 .pb-l{
     padding-bottom: 6rem;
 }
 .mt-s{margin-top: 2rem;}
+.mt-l{margin-top: 6rem;}
+.mt-m{margin-top: 4rem;}
 .pr-s{
     padding-right: 2rem;
 }
@@ -118,7 +129,7 @@ a{
     text-decoration: none;
 }
 .container{
-    padding: 2rem 13rem;
+    padding: 6rem 13rem;
 }
 
 
@@ -160,8 +171,6 @@ header{
 
 .navbar__items a:hover{
    color: var(--tertiary-color-shade);
-   border-bottom: 5px solid var(--tertiary-color-shade);
-   padding-bottom: .4rem;
 }
 
 .cta{
@@ -356,7 +365,7 @@ header{
 }
 
 .portfolio{
-    padding: 10rem 5rem 10rem 5rem;
+    padding: 10rem 13rem;
 }
 
 
@@ -384,6 +393,12 @@ textarea:focus
 {
     outline: .5px solid var(--linear-left);
 }
+
+.email-field{
+    padding: 1.4rem 2.5rem;
+    margin-right: 2rem;
+    transition: all 1s ease .6s;
+}
 textarea{
     resize: none;
     width: 100%;
@@ -394,7 +409,8 @@ textarea{
 .submit_btn{
     padding: 1.4rem 2.5rem;
     border: none;
-    background-color: var(--tertiary-color)
+    background-color: var(--tertiary-color);
+    color: var(--white);
 }
 .submit_btn:hover{
     background-color: var(--tertiary-color-shade);
@@ -427,9 +443,25 @@ footer{
     padding-right: 1rem;
 }
 
+.about-section{
+    font-family: 'Montserrat', sans-serif;
+}
+.details{
+    text-align: justify;
+    font-size: 1.8rem;
+}
+.social-media{
+    align-items: center;
+}
+.lets-connect{
+    padding: 7rem;
+}
+.icon{
+    font-size: 5rem;
+}
 @media (max-width:414px) {
     .container{
-        padding: 1rem 2rem;
+        padding: 5rem 2rem;
     }
 
     header {
@@ -493,5 +525,17 @@ footer{
 .primary-header {
     font-size: 3rem;
     padding-bottom: 3rem;
+}
+footer{
+    padding: 2rem 3rem;  
+    text-align: center;
+}
+
+.icon{
+    font-size: 4rem;
+}
+
+.blog__box{
+    padding-top: 4rem;
 }
 }
