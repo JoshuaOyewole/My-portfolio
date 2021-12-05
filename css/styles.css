@@ -71,6 +71,9 @@
 .pb-m{
     padding-bottom: 4rem;
 }
+.pb-l-on-mobile{
+    padding-bottom: 6rem;
+}
 .pt-m{
     padding-top: 4rem;
 }
@@ -465,11 +468,42 @@ footer{
     .container{
         padding: 5rem 2rem;
     }
-
+    .mt-s-on-mobile{
+        margin-top: 2rem;
+    }
+    .pb-l-on-mobile{
+        padding-bottom: 3rem;
+    }
     header {
         padding: 1rem 2rem 1rem 2rem;
     }
-    
+    .logo{
+        font-size: 1.2rem;
+    }
+    .navbar__links{
+        display: none;
+    }
+    .my-services{
+        padding: 0rem 2rem !important;
+    }
+    .why-choose-me {
+        padding: 11rem 2rem 12rem 3rem;
+    }
+    .why-choose-me__img{
+        display: none;
+    }
+    .portfolio {
+        padding: 10rem 2rem;
+    }
+    .portfolio > #grid3{
+        row-gap: 3rem;
+    }
+    form .grid2{
+        row-gap: 0;
+    }
+    .blog {
+        padding: 4rem 2rem 20rem 2rem;
+    }
 .grid3{
     display: grid;
     grid-template-columns: 1fr;
@@ -497,6 +531,7 @@ footer{
     grid-template-columns: 1fr;
     column-gap: 5rem;
 }
+
 .hero-section{
     padding: 2rem 2rem 13rem 2rem;
     /* height: 90vh; */
@@ -506,7 +541,7 @@ footer{
     font-size: 4rem;
 }
 .sub-title {
-    padding: 2rem;
+    padding: 2rem 0;
 }
 .hide-on-mobile{
     display: none;
@@ -528,9 +563,11 @@ footer{
     font-size: 3rem;
     padding-bottom: 3rem;
 }
+
 footer{
     padding: 2rem 3rem;  
     text-align: center;
+    flex-direction: column;
 }
 
 .icon{
