@@ -247,7 +247,7 @@ header{
     display: inline-block;
     font-size: 1.5rem;
     text-decoration: none;
-    padding: 1.2rem 2rem;
+    padding: 1.5rem 4rem;
     border-radius: 30rem;
 }
 
@@ -470,7 +470,31 @@ footer{
 .services-row {
     padding-right: 3rem;
 }
-@media (max-width:414px) {
+img.testify__img {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 1rem;
+}
+.profile-pixs {
+    width: 20rem;
+    height: auto;
+}
+
+.newsletter-form > .email-field {
+    width: 50%;
+}
+@media (max-width:768px) {
+    .cta {
+        margin-left: 0rem;
+    }
+    .newsletter-form > .email-field {
+        width: 93%;
+        margin-bottom: 2rem;
+    }
+    .profile-pixs {
+        width: 18rem;
+        height: 18rem;
+    }
     .services-row:nth-child(2) {
         order: 1;
     }
@@ -481,7 +505,7 @@ footer{
         row-gap: 0;
     }
     .container{
-        padding: 5rem 2rem;
+        padding: 5rem 8rem;
     }
     .testify{
         width: 32rem;
@@ -512,22 +536,24 @@ footer{
         padding: 0rem 2rem !important;
     }
     .why-choose-me {
-        padding: 11rem 2rem 12rem 3rem;
+        padding: 11rem 8rem 12rem 8rem;
     }
     .why-choose-me__img{
         display: none;
     }
+    
     .portfolio {
-        padding: 10rem 2rem;
+        padding: 10rem 8rem;
     }
     .portfolio > #grid3{
+        grid-template-columns: 1fr 1fr;
         row-gap: 3rem;
     }
     form .grid2{
         row-gap: 0;
     }
     .blog {
-        padding: 4rem 2rem 20rem 2rem;
+        padding: 4rem 8rem 20rem 8rem;
     }
 .grid3{
     display: grid;
@@ -547,7 +573,9 @@ footer{
 .grid2{
     grid-template-columns: 1fr;
     column-gap: 2rem;
+    row-gap: 3rem;
 }
+
 .grid2-2{
     grid-template-columns: 1fr;
     row-gap: 4rem;
@@ -558,12 +586,12 @@ footer{
 }
 
 .hero-section{
-    padding: 2rem 2rem 13rem 2rem;
+    padding: 2rem 8rem 13rem 8rem;
     /* height: 90vh; */
 
 }
 .title {
-    font-size: 4rem;
+    font-size: 6rem;
 }
 .sub-title {
     padding: 2rem 0;
@@ -624,12 +652,57 @@ footer{
 #testimonial .grid2-2{
     row-gap: 7rem;
 }
+.project-img img{
+    width: 100%;
 }
-
+.grid2 >.project .grid2{
+    row-gap: 1rem !important;
+}
+section.my__services {
+    padding: 2rem 5rem;
+}
+.btn-secondary{
+    padding: 1.3rem 2.5rem;
+}
+img.blog__img {
+    width: 100%;
+    height: auto;
+}
+}
+@media (max-width:414px) {
+.container{
+    padding: 5rem 2rem;
+}
+.portfolio {
+    padding: 10rem 2rem;
+}
+section.my__services {
+    padding: 2rem 1rem;
+}
+.why-choose-me {
+    padding: 11rem 2rem 12rem 3rem;
+}
+.portfolio > #grid3 {
+    grid-template-columns: 1fr;
+}
+.blog {
+    padding: 4rem 2rem 20rem 2rem;
+}
+.hero-section {
+    padding: 2rem 2rem 13rem 2rem;
+}
+.title {
+    font-size: 4rem;
+}
+.btn{
+    padding: 1.2rem 2rem;
+}
+}
 @media (max-width:375px) {
     .title {
         font-size: 2.5rem;
     }
+   
     .btn {
         font-size: 1.2rem;
         padding: 1.2rem 1rem;
@@ -649,7 +722,15 @@ footer{
         font-size: 2.5rem;
         text-align: left;
     }
+    .newsletter {
+        padding-bottom: 2rem;
+    }
+}
+@media (max-width:374px) {
 
+    .submit_btn {
+        margin-top: 2rem;
+    }
 }
 @media (max-width:310px) {
     .btn-secondary, .btn-primary {
@@ -665,4 +746,5 @@ footer{
     .pr-s {
         padding-right: 1rem;
     }
+    
 }
