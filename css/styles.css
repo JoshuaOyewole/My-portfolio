@@ -63,6 +63,9 @@
     margin-bottom: 4rem;
 }
 .ml-m{
+    margin-left: 4rem;
+}
+.ml-m{
     margin-left: 2rem;
 }
 .pb-s{
@@ -336,7 +339,7 @@ header{
 .tertiary-header{
     color: var(--secondary-color);
     padding-bottom: 1rem;
-    font-size: 1.8rem;
+    font-size: 2.3rem;
 }
 .primary-header{
     font-size: 5rem;
@@ -451,7 +454,7 @@ footer{
     padding-right: 1rem;
 }
 
-.about-section{
+section{
     font-family: 'Montserrat', sans-serif;
 }
 .details{
@@ -482,6 +485,34 @@ img.testify__img {
 
 .newsletter-form > .email-field {
     width: 50%;
+}
+
+.blog-section,
+.about-section{
+    background-image: url('../images/blog-header2.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.higher-index{
+    z-index: 5;
+    color: var(--white) !important;
+}
+.overlay-bg{
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.85;
+}
+.content-wrapper{
+    margin-left: 4rem;
 }
 @media (max-width:768px) {
     .cta {
@@ -697,6 +728,20 @@ section.my__services {
 .btn{
     padding: 1.2rem 2rem;
 }
+.newsletter {
+    padding-bottom: 2rem;
+}
+
+.content > h1,h2{
+    text-align: center;
+}
+.content-wrapper{
+    margin-left: 0rem;
+    text-align: center;
+}
+.slideshow-mobile{
+    justify-content: center;
+}
 }
 @media (max-width:375px) {
     .title {
@@ -722,9 +767,7 @@ section.my__services {
         font-size: 2.5rem;
         text-align: left;
     }
-    .newsletter {
-        padding-bottom: 2rem;
-    }
+    
 }
 @media (max-width:374px) {
 
