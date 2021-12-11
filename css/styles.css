@@ -27,6 +27,10 @@
 .primary-color{
     color: var(--tertiary-color);
 }
+
+.active{
+    display: flex !important;
+}
 .tertiary-color{
     color: var(--primary-color-shade2) !important;
 }
@@ -141,13 +145,13 @@ a{
     padding: 6rem 13rem;
 }
 
-
 header{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     align-items: center;  
     color: var(--black-shade);
-    padding: 1rem 7rem 1rem 15rem;
+    padding: 1.5rem 7rem 1.5rem 13rem;
+    background-color: rgba(252, 252, 252, 0.829);
 }
 
 .logo{
@@ -168,14 +172,16 @@ header{
     align-items: center;
 }
 
+
 .navbar__items{
-    display: inline-block;
+
     padding: 0 2rem;
 }
 
 .navbar__items a{
     transition: all 0.6s ease-in 0.3s;
     color: var(--black-shade);
+    display: block;
     font-weight: 700;
 }
 
@@ -199,7 +205,16 @@ header{
     background-color: var(--tertiary-color-shade);
     color: var(--white);
 }
-
+.toggle-btn{
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+   flex-direction: column;
+   justify-content: space-between;
+   height: 2.1rem;
+   width: 3rem;
+}
 
 /* Hero Section */
 .right {
@@ -517,6 +532,8 @@ img.testify__img {
 @media (max-width:768px) {
     .cta {
         margin-left: 0rem;
+        /* text-align: center; */
+        padding: 1.2rem 4rem;
     }
     .newsletter-form > .email-field {
         width: 93%;
@@ -548,21 +565,55 @@ img.testify__img {
     .pb-l-on-mobile{
         padding-bottom: 3rem;
     }
-    header {
-        padding: 1rem 2rem 1rem 2rem;
-    }
+    
     .d-flex {
         flex-wrap: wrap;
     }
     .services-row {
         padding-bottom: 2.5rem;
     }
+
+    header{
+        padding: 2rem;
+        position: relative;
+        flex-direction: column;
+        /* background-color: var(--secondary-color); */
+        /* height: 5vh; */
+    }
+    .navbar{
+        flex-direction: column;
+        padding-top: 8rem;
+        flex-direction: column;
+        padding-top: 8rem;
+        height: 95vh;
+        display: none;
+    }
+    
     .logo{
         font-size: 1.2rem;
     }
     .navbar__links{
-        display: none;
+        flex-direction: column;
+        width: 100%;
+    }  
+    .navbar__items{
+        display: block;
+        padding: 2rem 2rem;
+        background-color: var(--white);
+        width: 100%;
+        text-align: center;
     }
+
+    .toggle-btn{
+        display: flex;
+    }
+    .bar{
+        width: 100%;
+        height: .3rem;
+        border-radius: 1rem;
+        background-color: var(--primary-color);
+    }
+
     .my-services{
         padding: 0rem 2rem !important;
     }
@@ -630,6 +681,7 @@ img.testify__img {
 .hide-on-mobile{
     display: none;
 }
+
 
 .mb-m-on-mobile{
     margin-bottom: 2rem;
