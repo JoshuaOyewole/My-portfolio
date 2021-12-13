@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,900&family=Montserrat&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -32,15 +33,15 @@
             </ul> 
         </nav>
     </header>
-    
-        <section class="hero-section">
+    <div ></div>
+        <section class="hero-section" >
             <div id="grid2">
-                <div class="left">
+                <div class="left roll-in-left">
                     <span class="d-flex align-item-center direction-row mb-s hide-on-mobile">
                         <img src='./images/verify.png' alt="Web Developer with over 2 years Experience" />
                         <i class="primary-color ">Web Developer with over 2 years Experience</i>
                     </span>
-                    <h1 class="title">Lets make your Website do the talking</h1>
+                    <h1 class="title text-focus-in">Lets make your Website do the talking</h1>
                     <img src="./images/line.png" alt="line curve" class="underline">
                     <p class="sub-title">I create websites that helps you increase your business revenue by converting visitors to <span class="primary-color">Customers</span></p>
                     <div class="d-flex align-item-center mt-s-on-mobile">
@@ -51,7 +52,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="right wrapper">
+                <div class="right wrapper tilt-in-fwd-tr">
                     <img src="images/right.png" alt="Joshua Oyewole a Frontend Developer with over 2+ years Experience developing Website that helps Business double their Revenue" class="my-img">
                 </div>
             </div>
@@ -81,7 +82,7 @@
         </section>
 
         <!-- My Services -->
-        <div class="container my-services">
+        <section class="container my-services">
             <h2 class="primary-header primary-color2 pb-s t-center">Do you know that?</h2>
             <section class="my__services">
                 <div class="grid2 align-item-start">
@@ -99,9 +100,9 @@
                     </div>
                 </div>
             </section>
-        </div>
+        </section>
 
-        <div class="container what-i-do">
+        <section class="container what-i-do">
             <div class="grid12">
                 <div class="mb-m-on-mobile">
                     <p class="primary-header primary-color2 pb-s bold no-padding-bottom">What I do?</p>
@@ -128,7 +129,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <!-- WHY CHOOSE ME -->
         <section class="why-choose-me grid2">
@@ -322,6 +323,11 @@
                 </div>
             </footer>
 
-            <script src="app.js"></script>
+            <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+            <script>
+              AOS.init();
+            </script>
+            
+            <script src="js/navbar.js"></script>
 </body>
 </html>
