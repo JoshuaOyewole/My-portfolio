@@ -3,7 +3,7 @@
     --primary-color-shade1:#F07922;
     --primary-color-shade2:#F17216;
 
-    --secondary-color:#14183E;
+    --secondary-color:rgb(20, 24, 62);
     --secondary-color-shade1:#593FFB;
     --secondary-color-shade2: #282C4B;
     
@@ -226,7 +226,7 @@ header{
 }
 
 .navbar__items a{
-    transition: all 0.6s ease-in 0.3s;
+    transition: all 0.2s ease-in 0.3s;
     color: var(--black-shade);
     display: block;
     font-weight: 700;
@@ -251,7 +251,6 @@ header{
 .cta:hover{
     background-color: var(--tertiary-color-shade);
     color: var(--white);
-    -webkit-animation:vibrate-1 .3s linear both;animation:vibrate-1 .3s linear both
 }
 .toggle-btn{
     display: none;
