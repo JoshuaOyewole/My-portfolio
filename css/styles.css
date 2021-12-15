@@ -435,7 +435,8 @@ header{
     color: var(--secondary-color);
 }
 input[type=text],
-input[type=number]
+input[type=tel],
+input[type=email]
 {
     border-radius: 0.5rem;
     width: 100%;
@@ -444,7 +445,8 @@ input[type=number]
 }
 
 input[type=text]:focus,
-input[type=number]:focus,
+input[type=tel]:focus,
+input[type=email]:focus,
 textarea:focus
 {
     outline: .5px solid var(--linear-left);
