@@ -270,6 +270,7 @@ header{
 }
 .hero-section{
     padding: 2rem 8rem 2rem 13rem;
+    overflow-y: hidden;
 }
 
 .title{
@@ -436,6 +437,7 @@ header{
 input[type=text],
 input[type=number]
 {
+    border-radius: 0.5rem;
     width: 100%;
     padding: 1.4rem 2rem;
     border: .5px solid var(--black-shade);
@@ -560,7 +562,9 @@ img.testify__img {
     margin-left: 4rem;
 }
 
-
+.small{
+    font-size: 1.3rem;
+}
 @media (max-width:768px) {
     .cta {
         margin-left: 0rem;
@@ -606,7 +610,7 @@ img.testify__img {
     }
 
     header{
-        padding: 2rem;
+        padding: 4rem 6rem;
         position: relative;
         flex-direction: column;
         /* background-color: var(--secondary-color); */
@@ -783,6 +787,17 @@ img.blog__img {
     width: 100%;
     height: auto;
 }
+ul li.d-flex{
+    flex-wrap: nowrap;
+}
+.title.pt-m.content{font-size: 3.5rem;}
+.toggle-btn {
+    right: 9rem;
+    top: 3.5rem;
+}
+.d-flex.slideshow-mobile{
+    flex-wrap: nowrap;
+}
 }
 @media (max-width:414px) {
 .container{
@@ -792,7 +807,7 @@ img.blog__img {
     padding: 10rem 2rem;
 }
 section.my__services {
-    padding: 2rem 1rem;
+    padding: 2rem 0rem;
 }
 .why-choose-me {
     padding: 11rem 2rem 12rem 3rem;
@@ -806,9 +821,10 @@ section.my__services {
 .hero-section {
     padding: 2rem 2rem 13rem 2rem;
 }
-.title {
-    font-size: 4rem;
-}
+.title {font-size: 4rem;}
+.title.pt-m.content{font-size: 3rem;}
+.profile-pixs {height: 12rem;}
+h1.title.pt-m.content {padding-top: 0;}
 .btn{
     padding: 1.2rem 2rem;
 }
@@ -816,15 +832,23 @@ section.my__services {
     padding-bottom: 2rem;
 }
 
-.content > h1,h2{
-    text-align: center;
-}
 .content-wrapper{
     margin-left: 0rem;
     text-align: center;
 }
 .slideshow-mobile{
     justify-content: center;
+}
+ul li.d-flex{
+    align-items: flex-start;
+    padding-bottom: 2rem;
+}
+header {
+    padding: 2rem;
+}
+.toggle-btn {
+    right: 3rem;
+    top: 2rem;
 }
 }
 @media (max-width:375px) {
@@ -851,7 +875,7 @@ section.my__services {
         font-size: 2.5rem;
         text-align: left;
     }
-    
+   
 }
 @media (max-width:374px) {
 
@@ -859,7 +883,7 @@ section.my__services {
         margin-top: 2rem;
     }
 }
-@media (max-width:310px) {
+@media (max-width:320px) {
     .btn-secondary, .btn-primary {
         padding: 1rem 1.4rem;
         font-size: 1.3rem;
@@ -873,5 +897,7 @@ section.my__services {
     .pr-s {
         padding-right: 1rem;
     }
-    
+    .title.pt-m.content {
+        font-size: 2.2rem;
+    }
 }
