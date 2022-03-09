@@ -744,7 +744,12 @@ footer{
 .testifier__name{
     color: var(--linear-right);
 }
-
+#testimonialCard{
+    background: #000000c2 !important;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 2rem 2rem;
+}
 #testimonial .grid2-2{
     row-gap: 7rem;
 }
