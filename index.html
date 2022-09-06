@@ -33,10 +33,10 @@
         <nav id="navbar" class="navbar">
             <ul class="navbar__links">
                 <li class="navbar__items"><a href="/">Home</a></li>
-                <li class="navbar__items"><a href="portfolio.html">Portfolio</a></li>
+                <li class="navbar__items"><a href="#portfolio">Portfolio</a></li>
                 <li class="navbar__items"><a href="about.html">About Me</a></li>
-                <li class="navbar__items"><a href="blog.html">Blog</a></li>
-                    <a class="cta btn_hire" href="#contact">Hire Me</a>
+                <li class="navbar__items"><a href="#blog">Blog</a></li>
+                <a class="cta btn_hire" href="#contact">Hire Me</a>
             </ul> 
         </nav>
     </header>
@@ -50,12 +50,12 @@
                     </span> -->
                     <p class="title">Hi, <br> I'm Joshua Oyewole</p>
                     <img src="./images/line.png" alt="line curve" class="underline">
-                    <h1 class="sub-title">I help small business owners increase their<span class="primary-color"> Sells</span> by creating converting websites that attract customers</h1>
+                    <p class="sub-title">A Software Engineer with over 2 years of industry experience creating solutions that solves business and human needs. Skilled in the use of <span class="primary-color"> JavaScript, Typescripts, React.js, NodeJs and NextJs </span>in creating optimized and reusable codes. </p>
                     <div class="d-flex align-item-center mt-s-on-mobile">
                         <a href='#contact' class="btn btn-primary">Lets Get Started</a>
                         <span class="d-flex ml-m btn-secondary align-item-center">
-                            <img src='./images/video-circle.png' class="p-circle" alt='know more about Joshua Oyewole'/>
-                            <a href='about.html' class="secondary-color">Know More</a>
+                            <!-- <img src='./images/video-circle.png' class="p-circle" alt='know more about Joshua Oyewole'/> chnage it to an SVG so you can change the image color-->
+                            <a href='about.html' class="text-white">Know More</a>
                         </span>
                     </div>
                 </div>
@@ -108,7 +108,7 @@
             </section>
         </section> -->
 
-        <section class="container what-i-do mt-xl">
+        <!-- <section class="container what-i-do mt-xl">
             <div class="grid12">
                 <div class="mb-m-on-mobile">
                     <p class="primary-header primary-color2 pb-s bold no-padding-bottom">What I do?</p>
@@ -135,7 +135,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     
      
      <!-- WHY CHOOSE ME -->
@@ -166,9 +166,11 @@
         <!-- PORTFOLIO -->
 
             <section class="portfolio" id="portfolio">
-                <h3 class="uppercase tertiary-header tertiary-color t-center">PORTFOLIO</h3> 
-                <h2 class="secondary-header primary-color2 pb-l t-center secondary-color">Some of my recent Projects </h2>
-              <div class="projectCard-container">
+                <div class="mb-m-on-mobile center col mb-m">
+                    <p class="primary-header primary-color2 pb-s bold no-padding-bottom t-center">My Recent Works</p>
+                <img src="./images/line.png" alt="line curve" class="underline">
+                </div>
+              <div class="projectCard-container grid2">
                 <div class="project">
                     <img src="/images/project-3.png" alt="Project 1" class="projectImage">
                     <div class="projectDescription">
@@ -210,7 +212,7 @@
             </section>    
 
         <!-- TESTIMONIAL -->
-        <div class="container">
+        <!-- <div class="container">
             <section class="testimonial" id="testimonial">
                 <h3 class="uppercase tertiary-header tertiary-color t-center">TESTIMONIAL</h3> 
                 <h2 class="secondary-header primary-color2 t-center secondary-color pb-l-on-mobile">What My Client’s are Saying</h2>
@@ -253,7 +255,7 @@
                 </div>
                 </div>
             </section>
-        </div>  
+        </div>   -->
 
     <!-- CONTACT ME-->
     <div class="container">
@@ -326,19 +328,14 @@
 
             <footer class="d-flex justify-content-sb mt-l">
                 <div>
-                    <p class="small">Built from scratch by Joshua.</p>
-                    <p class="copyright">&copy; Copyright 2021. All right reserved</p>
+                    <p class="copyright">&copy; Copyright <span class="copyright_year">2021.</span> All right reserved</p>
                 </div>
-                <div class=" hide-on-mobile">
-                    <div class="links">
-                        <a href="https://twitter.com/joshuaoyewole11"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/joshuaoyewole"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://github.com/JoshuaOyewole"><i class="fab fa-github"></i></a>
-                    </div>
-                    <p>Tel: 2347032054367</p>
+                <div class="links">
+                    <a href="https://twitter.com/joshuaoyewole11"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/joshuaoyewole"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/JoshuaOyewole"><i class="fab fa-github"></i></a>
                 </div>
-                <p style="font-size: 12px;">Contact Address: Auchi, Edo State Nigeria</p>
             </footer>
-            <script src="js/navbar.js"></script>
+            <script src="js/app.js"></script>
 </body>
 </html>

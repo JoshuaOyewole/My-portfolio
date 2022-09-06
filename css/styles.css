@@ -1,4 +1,5 @@
 :root{
+    --bg-color: #192026;
     --primary-color:#FB773F;
     --primary-color-shade1:#F07922;
     --primary-color-shade2:#F17216;
@@ -21,13 +22,20 @@
 }
 
 /* UTILIES */
+.text-white{
+    color:var(--white);
+}
 .t-center{
     text-align: center;
 }
 .primary-color{
     color: var(--tertiary-color);
 }
-
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .active{
     display: flex !important;
 }
@@ -35,7 +43,7 @@
     color: var(--primary-color-shade2) !important;
 }
 .primary-color2{
-    color: var(--secondary-color) !important;
+    color: var(--white) !important;
 }
 .d-flex{
     display: flex;
@@ -110,13 +118,13 @@
 
   /* TYPOGRAGPHY */
 .tertiary-header{
-    color: var(--secondary-color);
+    color: var(--white);
     padding-bottom: 1rem;
     font-size: 2.3rem;
 }
 .primary-header{
     font-size: 5rem;
-    color: var(--secondary-color);
+    color: var(--white);
     padding-bottom: 8rem;
 }
 .secondary-header{
@@ -154,6 +162,8 @@ body{
     font-family: 'Ubuntu', sans-serif;
     line-height: 1.6;
     font-size: 1.6rem;
+    background-color: var(--bg-color);
+    color: var(--white);
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Lato', sans-serif; */
 }
@@ -258,7 +268,7 @@ header{
 .sub-title{
     padding: 2rem 15rem 3rem 0rem;
     font-size: 1.9rem;
-    color: var(--secondary-color-dark);
+    color: var(--white);
 }
 
 .p-circle{
@@ -317,12 +327,12 @@ header{
 }
 
 .btn-secondary{
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--white);
     padding: .9rem 2.5rem;
     border-radius: 30rem;
 }
 .btn-secondary:hover{
-    color: var(--secondary-color);
+    color: var(--linear-right);
     border: 1px solid var(--linear-right);
 }
 .btn__get-started{
@@ -414,13 +424,12 @@ header{
 
 /* FORMS */
 .form-control{
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .form-control label{
     display: inline-block;
     padding-bottom: .2rem;
-    font-weight: bold;
-    color: var(--secondary-color);
+    color: var(--white);
 }
 input[type=text],
 input[type=tel],
@@ -469,7 +478,7 @@ textarea{
 }
 .blog__title{
     padding-bottom: 1rem;
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 
@@ -765,6 +774,11 @@ footer{
 }
 #testimonial .grid2-2{
     row-gap: 7rem;
+}
+.projectCard-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4rem;
 }
 .project {
     display: grid;
