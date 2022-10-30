@@ -242,6 +242,9 @@ a {
 .container {
     padding: 6rem 13rem;
 }
+.copyright {
+    font-size: 1.5rem !important;
+}
 
 header {
     display: flex;
@@ -1292,9 +1295,8 @@ header {
         padding: 1rem 1.4rem;
         font-size: 1.3rem;
     }
-
     .copyright {
-        font-size: 1.4rem;
+        font-size: 1.2rem !important;
     }
 
     .why-choose-me {
