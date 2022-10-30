@@ -3,5 +3,8 @@ let navLinks = document.getElementById('navbar');
 
 toggleBtn.addEventListener('click', ()=>{
     navLinks.classList.toggle('active');
-
 })
+
+const copyrightYear = new Date().getFullYear();
+
+const year = document.querySelector('#cyear').innerText = copyrightYear;
