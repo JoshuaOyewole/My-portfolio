@@ -75,7 +75,9 @@
 .iblock {
     display: inline-block;
 }
-
+.hide{
+    display: none;
+}
 .mb-s {
     margin-bottom: 2rem;
 }
@@ -552,6 +554,7 @@ header {
 
 .project--list {
     display: flex;
+    align-items: center;
     background-color: var(--dark3);
     height: auto;
     min-height: 25rem;
