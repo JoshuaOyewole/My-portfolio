@@ -76,7 +76,7 @@
     display: inline-block;
 }
 .hide{
-    display: none;
+    display: none !important;
 }
 .mb-s {
     margin-bottom: 2rem;
@@ -90,7 +90,7 @@
     margin-left: 4rem;
 }
 
-.ml-m {
+.ml-s {
     margin-left: 2rem;
 }
 
