@@ -75,7 +75,9 @@
 .iblock {
     display: inline-block;
 }
-
+.hide{
+    display: none;
+}
 .mb-s {
     margin-bottom: 2rem;
 }
@@ -241,6 +243,9 @@ a {
 
 .container {
     padding: 6rem 13rem;
+}
+.copyright {
+    font-size: 1.5rem !important;
 }
 
 header {
@@ -549,6 +554,7 @@ header {
 
 .project--list {
     display: flex;
+    align-items: center;
     background-color: var(--dark3);
     height: auto;
     min-height: 25rem;
@@ -1292,9 +1298,8 @@ header {
         padding: 1rem 1.4rem;
         font-size: 1.3rem;
     }
-
     .copyright {
-        font-size: 1.4rem;
+        font-size: 1.2rem !important;
     }
 
     .why-choose-me {
