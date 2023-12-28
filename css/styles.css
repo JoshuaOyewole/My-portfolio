@@ -451,7 +451,7 @@ header {
 .btn_seperated {
   justify-content: flex-start;
   margin-top: 5rem;
-  column-gap: 3rem 
+  column-gap: 3rem;
 }
 */
 /* GRID LAYOUTs */
@@ -1135,6 +1135,9 @@ img.testify__img {
   }
 }
 @media (max-width: 470px) {
+  body {
+    font-size: 1.4rem;
+  }
   #grid2 > .left,
   .wrapper {
     margin-top: -10rem;
